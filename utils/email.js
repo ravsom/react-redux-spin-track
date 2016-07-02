@@ -29,17 +29,17 @@ function sendWelcomeEmail(user, host, finalCB) {
         postmark.sendEmailWithTemplate({
           "From": process.env.FROM_EMAIL,
           "To": user.email,
-          "TemplateId": 491642,
+          "TemplateId": 747961,
           "TemplateModel": {
-            "product_name": "React Redux Blog",
+            "product_name": "Spin Track",
             "name": user.name,
             "action_url": host + '/validateEmail/' + user.verifyEmailToken,
             "username": user.username,
-            "sender_name": "Redux Team",
-            'sender_name_Value': 'Raja',
-            'product_name_Value': 'React-Redux-Blog',
-            "product_address_line1": "One Market",
-            "product_address_line2": "San Francisco"
+            "sender_name": "Ravi your personal instructor",
+            'sender_name_Value': 'Ravi',
+            'product_name_Value': 'Spin Track',
+            "product_address_line1": "CV Raman Nagar",
+            "product_address_line2": "Bengaluru"
           }
         }, done);
       }
