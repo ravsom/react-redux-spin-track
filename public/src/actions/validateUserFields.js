@@ -21,6 +21,7 @@ export function validateUserFields(values) {
   };
 }
 
+console.log("Hello");
 export function validateUserFieldsSuccess() {
   return {
     type: VALIDATE_USER_FIELDS_SUCCESS
