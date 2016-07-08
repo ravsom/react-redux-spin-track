@@ -1,6 +1,6 @@
 module.exports = {
 	entry: [
-		'webpack/hot/dev-server',
+		//'webpack/hot/dev-server',
 		'./public/src/index.js'
 	],
 	output: {
