@@ -43,7 +43,6 @@ function validateSignUpForm(values, callback) {
 
   if (values.confirmPassword && values.confirmPassword.trim() !== '' && values.password && values.password.trim() !== '' && values.password !== values.confirmPassword) {
     errors.password = 'Password And Confirm Password don\'t match';
-    errors.password = 'Password And Confirm Password don\'t match';
     hasErrors = true;
   }
 
@@ -74,4 +73,4 @@ module.exports = {
   validateSignUpForm: validateSignUpForm,
   getCleanUser: getCleanUser,
   generateToken: generateToken
-}
+};

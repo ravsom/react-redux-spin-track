@@ -21,7 +21,6 @@ export function validateUserFields(values) {
   };
 }
 
-console.log("Hello");
 export function validateUserFieldsSuccess() {
   return {
     type: VALIDATE_USER_FIELDS_SUCCESS
@@ -39,5 +38,5 @@ export function resetValidateUserFields() {
   return {
     type: RESET_VALIDATE_USER_FIELDS
   }
-};
+}
 
